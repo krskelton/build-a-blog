@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                label{
+                    display:block;
+                    margin:10px;
+                }
+                span.error {
+                    color: red;
+                }
+            </style> 
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <div>
+            <!--main blog page link-->
+            <li><a href="/blog">Main blog page</a></li>
+            <li><a href="/newpost">Add new blog page</a></li>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
