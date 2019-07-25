@@ -51,7 +51,7 @@ def new_post():
             post = Blog.query.filter_by(id=new_post.id).first()
             return redirect(f'/blog?id={post.id}')
 
-    return render_template('newpost.html', title_error=title_error, body_error=body_error)
+    return render_template('newpost.html')
 
 @app.route('/blog', methods=['POST', 'GET'])
 def blog():
